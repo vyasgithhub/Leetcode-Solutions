@@ -1,6 +1,7 @@
 class Solution {
 public:
     vector<int> rearrangeArray(vector<int>& nums) {
+        sort(nums.begin(),nums.end());
         map<int,int>freq;
         for(auto i:nums){
             freq[i]++;
